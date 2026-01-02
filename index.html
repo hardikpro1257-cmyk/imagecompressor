@@ -469,36 +469,6 @@
             font-size: 0.9rem;
         }
 
-        /* Ad Section */
-        .ad-section {
-            padding: 40px 0;
-        }
-
-        .ad-container {
-            background: linear-gradient(135deg, var(--primary-color), #8a84ff);
-            border-radius: var(--border-radius);
-            padding: 40px;
-            color: white;
-            text-align: center;
-            box-shadow: var(--box-shadow);
-        }
-
-        .ad-title {
-            font-family: 'Poppins', sans-serif;
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 15px;
-        }
-
-        .ad-desc {
-            font-size: 1.1rem;
-            margin-bottom: 30px;
-            opacity: 0.9;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
         /* How It Works */
         .how-it-works {
             padding: 60px 0;
@@ -678,14 +648,6 @@
             .tools-grid, .categories-grid {
                 grid-template-columns: 1fr;
             }
-            
-            .ad-container {
-                padding: 30px 20px;
-            }
-            
-            .ad-title {
-                font-size: 1.6rem;
-            }
         }
 
         @media (max-width: 480px) {
@@ -782,17 +744,13 @@
                 <a href="index.html" class="nav-link active">Home</a>
                 <a href="#featured-tools" class="nav-link">Tools</a>
                 <a href="#categories" class="nav-link">Categories</a>
-                <a href="#" class="nav-link">Blog</a>
-                <a href="#" class="nav-link">FAQ</a>
-                <a href="#" class="nav-link">Contact</a>
+                <a href="#how-it-works" class="nav-link">How It Works</a>
+                <a href="#footer" class="nav-link">Contact</a>
             </nav>
             
             <div class="user-actions">
-                <a href="#" class="btn btn-secondary">
-                    <i class="fas fa-sign-in-alt"></i> Login
-                </a>
-                <a href="#" class="btn btn-primary">
-                    <i class="fas fa-user-plus"></i> Sign Up
+                <a href="image-compressor.html" class="btn btn-primary">
+                    <i class="fas fa-compress-arrows-alt"></i> Compress Images
                 </a>
             </div>
             
@@ -820,17 +778,16 @@
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="#featured-tools">Tools</a></li>
             <li><a href="#categories">Categories</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#footer">Contact</a></li>
+            <li><a href="image-compressor.html" style="color: var(--primary-color); font-weight: 600;">
+                <i class="fas fa-compress-arrows-alt"></i> Image Compressor
+            </a></li>
         </ul>
         
         <div class="mobile-nav-actions">
-            <a href="#" class="btn btn-secondary" style="width: 100%; margin-bottom: 15px;">
-                <i class="fas fa-sign-in-alt"></i> Login
-            </a>
-            <a href="#" class="btn btn-primary" style="width: 100%;">
-                <i class="fas fa-user-plus"></i> Sign Up
+            <a href="image-compressor.html" class="btn btn-primary" style="width: 100%;">
+                <i class="fas fa-compress-arrows-alt"></i> Compress Images Now
             </a>
         </div>
     </div>
@@ -839,33 +796,33 @@
     <section class="hero">
         <div class="container hero-content">
             <h1 class="hero-title">
-                All-in-One <span>Tool Collection</span>
+                Free Online <span>Image & PDF Tools</span>
             </h1>
             <p class="hero-subtitle">
-                Free online tools for images, PDFs, documents, and more. All tools work in your browser - no uploads required, no data shared.
+                Compress, convert, edit, and optimize images and PDFs. All tools work entirely in your browser - no uploads required, no data shared.
             </p>
             
             <div class="hero-stats">
-                <div class="stat-item">
-                    <div class="stat-value">50+</div>
-                    <div class="stat-label">Free Tools</div>
-                </div>
                 <div class="stat-item">
                     <div class="stat-value">100%</div>
                     <div class="stat-label">Browser-Based</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-value">0</div>
-                    <div class="stat-label">Registration Needed</div>
+                    <div class="stat-label">Registration</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-value">∞</div>
                     <div class="stat-label">Unlimited Usage</div>
                 </div>
+                <div class="stat-item">
+                    <div class="stat-value">🔒</div>
+                    <div class="stat-label">Privacy First</div>
+                </div>
             </div>
             
-            <a href="#featured-tools" class="btn btn-primary" style="padding: 16px 40px; font-size: 1.1rem;">
-                <i class="fas fa-rocket"></i> Explore All Tools
+            <a href="image-compressor.html" class="btn btn-primary" style="padding: 16px 40px; font-size: 1.1rem;">
+                <i class="fas fa-compress-arrows-alt"></i> Compress Images Now
             </a>
         </div>
     </section>
@@ -878,8 +835,8 @@
             </h2>
             
             <div class="tools-grid">
-                <!-- Image Compression Tool -->
-                <a href="image-compression.html" class="tool-card featured">
+                <!-- Image Compression Tool - MAIN LINK TO YOUR FILE -->
+                <a href="image-compressor.html" class="tool-card featured">
                     <div class="featured-badge">Most Popular</div>
                     <div class="tool-header">
                         <div class="tool-icon">
@@ -891,15 +848,15 @@
                         </div>
                     </div>
                     <div class="tool-body">
-                        <p class="tool-desc">Reduce image file size while maintaining quality. Supports JPG, PNG, and WebP formats. Works entirely in your browser.</p>
+                        <p class="tool-desc">Reduce image file size while maintaining quality. Supports JPG, PNG, and WebP formats. Works entirely in your browser - no uploads to servers.</p>
                     </div>
                     <div class="tool-footer">
                         <div class="tool-stats">
                             <div class="tool-stat">
-                                <i class="fas fa-users"></i> 45K/mo
+                                <i class="fas fa-users"></i> 45K/month
                             </div>
                             <div class="tool-stat">
-                                <i class="fas fa-star"></i> 4.9
+                                <i class="fas fa-star"></i> 4.9/5
                             </div>
                         </div>
                         <span class="tool-link">
@@ -909,7 +866,7 @@
                 </a>
                 
                 <!-- PDF Compressor -->
-                <a href="pdf-compression.html" class="tool-card">
+                <a href="#" class="tool-card" onclick="alert('PDF Compressor coming soon! For now, try our Image Compressor.'); return false;">
                     <div class="tool-header">
                         <div class="tool-icon">
                             <i class="fas fa-file-pdf"></i>
@@ -920,25 +877,22 @@
                         </div>
                     </div>
                     <div class="tool-body">
-                        <p class="tool-desc">Reduce PDF file size without losing quality. Perfect for email attachments and web uploads.</p>
+                        <p class="tool-desc">Reduce PDF file size without losing quality. Perfect for email attachments and web uploads. Coming soon!</p>
                     </div>
                     <div class="tool-footer">
                         <div class="tool-stats">
                             <div class="tool-stat">
-                                <i class="fas fa-users"></i> 38K/mo
-                            </div>
-                            <div class="tool-stat">
-                                <i class="fas fa-star"></i> 4.8
+                                <i class="fas fa-users"></i> Coming Soon
                             </div>
                         </div>
                         <span class="tool-link">
-                            Use Tool <i class="fas fa-arrow-right"></i>
+                            Coming Soon <i class="fas fa-clock"></i>
                         </span>
                     </div>
                 </a>
                 
                 <!-- Image Converter -->
-                <a href="image-converter.html" class="tool-card">
+                <a href="#" class="tool-card" onclick="alert('Image Converter coming soon! For now, try our Image Compressor.'); return false;">
                     <div class="tool-header">
                         <div class="tool-icon">
                             <i class="fas fa-exchange-alt"></i>
@@ -949,54 +903,22 @@
                         </div>
                     </div>
                     <div class="tool-body">
-                        <p class="tool-desc">Convert images between JPG, PNG, WebP, and other formats. Batch conversion available.</p>
+                        <p class="tool-desc">Convert images between JPG, PNG, WebP, and other formats. Batch conversion available. Coming soon!</p>
                     </div>
                     <div class="tool-footer">
                         <div class="tool-stats">
                             <div class="tool-stat">
-                                <i class="fas fa-users"></i> 32K/mo
-                            </div>
-                            <div class="tool-stat">
-                                <i class="fas fa-star"></i> 4.7
+                                <i class="fas fa-users"></i> Coming Soon
                             </div>
                         </div>
                         <span class="tool-link">
-                            Use Tool <i class="fas fa-arrow-right"></i>
-                        </span>
-                    </div>
-                </a>
-                
-                <!-- PDF to JPG -->
-                <a href="pdf-to-jpg.html" class="tool-card">
-                    <div class="tool-header">
-                        <div class="tool-icon">
-                            <i class="fas fa-file-image"></i>
-                        </div>
-                        <div class="tool-info">
-                            <h3>PDF to JPG</h3>
-                            <span class="tool-tag">PDF Tools</span>
-                        </div>
-                    </div>
-                    <div class="tool-body">
-                        <p class="tool-desc">Convert PDF pages to high-quality JPG images. Extract images from PDF documents.</p>
-                    </div>
-                    <div class="tool-footer">
-                        <div class="tool-stats">
-                            <div class="tool-stat">
-                                <i class="fas fa-users"></i> 28K/mo
-                            </div>
-                            <div class="tool-stat">
-                                <i class="fas fa-star"></i> 4.6
-                            </div>
-                        </div>
-                        <span class="tool-link">
-                            Use Tool <i class="fas fa-arrow-right"></i>
+                            Coming Soon <i class="fas fa-clock"></i>
                         </span>
                     </div>
                 </a>
                 
                 <!-- Image Resizer -->
-                <a href="image-resizer.html" class="tool-card">
+                <a href="#" class="tool-card" onclick="alert('Image Resizer coming soon! For now, try our Image Compressor.'); return false;">
                     <div class="tool-header">
                         <div class="tool-icon">
                             <i class="fas fa-expand-alt"></i>
@@ -1007,69 +929,24 @@
                         </div>
                     </div>
                     <div class="tool-body">
-                        <p class="tool-desc">Resize images to any dimensions while maintaining aspect ratio. Perfect for social media.</p>
+                        <p class="tool-desc">Resize images to any dimensions while maintaining aspect ratio. Perfect for social media. Coming soon!</p>
                     </div>
                     <div class="tool-footer">
                         <div class="tool-stats">
                             <div class="tool-stat">
-                                <i class="fas fa-users"></i> 25K/mo
-                            </div>
-                            <div class="tool-stat">
-                                <i class="fas fa-star"></i> 4.7
+                                <i class="fas fa-users"></i> Coming Soon
                             </div>
                         </div>
                         <span class="tool-link">
-                            Use Tool <i class="fas fa-arrow-right"></i>
-                        </span>
-                    </div>
-                </a>
-                
-                <!-- PDF Merger -->
-                <a href="pdf-merger.html" class="tool-card">
-                    <div class="tool-header">
-                        <div class="tool-icon">
-                            <i class="fas fa-file-medical-alt"></i>
-                        </div>
-                        <div class="tool-info">
-                            <h3>PDF Merger</h3>
-                            <span class="tool-tag">PDF Tools</span>
-                        </div>
-                    </div>
-                    <div class="tool-body">
-                        <p class="tool-desc">Combine multiple PDF files into a single document. Rearrange pages as needed.</p>
-                    </div>
-                    <div class="tool-footer">
-                        <div class="tool-stats">
-                            <div class="tool-stat">
-                                <i class="fas fa-users"></i> 22K/mo
-                            </div>
-                            <div class="tool-stat">
-                                <i class="fas fa-star"></i> 4.5
-                            </div>
-                        </div>
-                        <span class="tool-link">
-                            Use Tool <i class="fas fa-arrow-right"></i>
+                            Coming Soon <i class="fas fa-clock"></i>
                         </span>
                     </div>
                 </a>
             </div>
             
-            <div style="text-align: center;">
-                <a href="all-tools.html" class="btn btn-secondary">
-                    <i class="fas fa-th-large"></i> View All Tools
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Ad Section -->
-    <section class="ad-section">
-        <div class="container">
-            <div class="ad-container">
-                <h2 class="ad-title">Upgrade to Pro Toolkit</h2>
-                <p class="ad-desc">Unlock premium features: batch processing, higher file limits, priority support, and no watermarks on processed files.</p>
-                <a href="#" class="btn btn-primary" style="background-color: white; color: var(--primary-color); font-size: 1.1rem; padding: 16px 40px;">
-                    <i class="fas fa-crown"></i> Upgrade Now - $9.99/month
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="image-compressor.html" class="btn btn-primary">
+                    <i class="fas fa-compress-arrows-alt"></i> Try Image Compressor Now
                 </a>
             </div>
         </div>
@@ -1083,65 +960,47 @@
             </h2>
             
             <div class="categories-grid">
-                <a href="image-tools.html" class="category-card">
+                <a href="image-compressor.html" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-compress-arrows-alt"></i>
+                    </div>
+                    <h3 class="category-title">Compression Tools</h3>
+                    <p class="category-desc">Reduce file sizes without losing quality. Perfect for web optimization and storage saving.</p>
+                    <span class="category-count">3 Tools</span>
+                </a>
+                
+                <a href="#" class="category-card" onclick="alert('Image Tools category coming soon!'); return false;">
                     <div class="category-icon">
                         <i class="fas fa-file-image"></i>
                     </div>
                     <h3 class="category-title">Image Tools</h3>
-                    <p class="category-desc">Compress, resize, convert, edit and enhance your images with our comprehensive toolkit.</p>
-                    <span class="category-count">24 Tools</span>
+                    <p class="category-desc">Edit, convert, resize, and optimize images with our comprehensive toolkit.</p>
+                    <span class="category-count">Coming Soon</span>
                 </a>
                 
-                <a href="pdf-tools.html" class="category-card">
+                <a href="#" class="category-card" onclick="alert('PDF Tools category coming soon!'); return false;">
                     <div class="category-icon">
                         <i class="fas fa-file-pdf"></i>
                     </div>
                     <h3 class="category-title">PDF Tools</h3>
                     <p class="category-desc">Merge, split, compress, convert and edit PDF documents with ease.</p>
-                    <span class="category-count">18 Tools</span>
+                    <span class="category-count">Coming Soon</span>
                 </a>
                 
-                <a href="compression-tools.html" class="category-card">
-                    <div class="category-icon">
-                        <i class="fas fa-compress-alt"></i>
-                    </div>
-                    <h3 class="category-title">Compression</h3>
-                    <p class="category-desc">Reduce file sizes without significant quality loss for images and PDFs.</p>
-                    <span class="category-count">12 Tools</span>
-                </a>
-                
-                <a href="conversion-tools.html" class="category-card">
+                <a href="#" class="category-card" onclick="alert('Conversion Tools category coming soon!'); return false;">
                     <div class="category-icon">
                         <i class="fas fa-exchange-alt"></i>
                     </div>
                     <h3 class="category-title">Conversion</h3>
-                    <p class="category-desc">Convert between various image formats and PDF to other file types.</p>
-                    <span class="category-count">15 Tools</span>
-                </a>
-                
-                <a href="editing-tools.html" class="category-card">
-                    <div class="category-icon">
-                        <i class="fas fa-edit"></i>
-                    </div>
-                    <h3 class="category-title">Editing Tools</h3>
-                    <p class="category-desc">Edit images and PDFs with our easy-to-use online editors.</p>
-                    <span class="category-count">10 Tools</span>
-                </a>
-                
-                <a href="developer-tools.html" class="category-card">
-                    <div class="category-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3 class="category-title">Developer Tools</h3>
-                    <p class="category-desc">Tools for developers including code formatters, validators, and converters.</p>
-                    <span class="category-count">8 Tools</span>
+                    <p class="category-desc">Convert between various file formats including images, documents, and more.</p>
+                    <span class="category-count">Coming Soon</span>
                 </a>
             </div>
         </div>
     </section>
 
     <!-- How It Works -->
-    <section class="how-it-works">
+    <section class="how-it-works" id="how-it-works">
         <div class="container">
             <h2 class="section-title">
                 How It <span>Works</span>
@@ -1150,33 +1009,39 @@
             <div class="steps">
                 <div class="step">
                     <div class="step-number">1</div>
-                    <h3 class="step-title">Choose Tool</h3>
-                    <p class="step-desc">Select from our collection of 50+ free tools for images, PDFs, and documents.</p>
+                    <h3 class="step-title">Choose Your Tool</h3>
+                    <p class="step-desc">Select from our collection of free online tools. Start with our most popular Image Compressor.</p>
                 </div>
                 
                 <div class="step">
                     <div class="step-number">2</div>
-                    <h3 class="step-title">Upload Files</h3>
-                    <p class="step-desc">Drag & drop or select files from your device. All processing happens in your browser.</p>
+                    <h3 class="step-title">Upload or Drag Files</h3>
+                    <p class="step-desc">Select files from your device or drag & drop them into the tool. All processing happens locally.</p>
                 </div>
                 
                 <div class="step">
                     <div class="step-number">3</div>
-                    <h3 class="step-title">Process Files</h3>
-                    <p class="step-desc">Adjust settings as needed. Our tools process files instantly without uploading to servers.</p>
+                    <h3 class="step-title">Adjust Settings</h3>
+                    <p class="step-desc">Customize compression level, format, or other settings based on your needs.</p>
                 </div>
                 
                 <div class="step">
                     <div class="step-number">4</div>
                     <h3 class="step-title">Download Results</h3>
-                    <p class="step-desc">Get your processed files instantly. No watermarks, no limits, no registration required.</p>
+                    <p class="step-desc">Get your optimized files instantly. No watermarks, no limits, no registration required.</p>
                 </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 50px;">
+                <a href="image-compressor.html" class="btn btn-primary" style="padding: 16px 40px; font-size: 1.1rem;">
+                    <i class="fas fa-play-circle"></i> Get Started Now
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer id="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-col">
@@ -1185,52 +1050,52 @@
                         <h2>ToolMaster</h2>
                     </a>
                     <p class="footer-about">
-                        ToolMaster provides free online tools for images, PDFs, and documents. Our tools are 100% free, work in your browser, and don't require registration. Process files securely without uploading to servers.
+                        ToolMaster provides free online tools that work entirely in your browser. No uploads to servers, no data sharing, and no registration required. Your privacy is our priority.
                     </p>
                     <div class="social-links">
                         <a href="#" style="color: white; margin-right: 15px; font-size: 1.2rem;"><i class="fab fa-twitter"></i></a>
-                        <a href="#" style="color: white; margin-right: 15px; font-size: 1.2rem;"><i class="fab fa-facebook"></i></a>
-                        <a href="#" style="color: white; margin-right: 15px; font-size: 1.2rem;"><i class="fab fa-linkedin"></i></a>
                         <a href="#" style="color: white; margin-right: 15px; font-size: 1.2rem;"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
                 
                 <div class="footer-col">
-                    <h3 class="footer-title">Image Tools</h3>
+                    <h3 class="footer-title">Available Tools</h3>
                     <ul class="footer-links">
-                        <li><a href="image-compression.html"><i class="fas fa-chevron-right"></i> Image Compressor</a></li>
-                        <li><a href="image-resizer.html"><i class="fas fa-chevron-right"></i> Image Resizer</a></li>
-                        <li><a href="image-converter.html"><i class="fas fa-chevron-right"></i> Image Converter</a></li>
-                        <li><a href="image-cropper.html"><i class="fas fa-chevron-right"></i> Image Cropper</a></li>
-                        <li><a href="image-editor.html"><i class="fas fa-chevron-right"></i> Image Editor</a></li>
+                        <li><a href="image-compressor.html"><i class="fas fa-chevron-right"></i> Image Compressor</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> PDF Compressor (Soon)</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Image Converter (Soon)</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Image Resizer (Soon)</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> PDF Merger (Soon)</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-col">
-                    <h3 class="footer-title">PDF Tools</h3>
+                    <h3 class="footer-title">Quick Links</h3>
                     <ul class="footer-links">
-                        <li><a href="pdf-compression.html"><i class="fas fa-chevron-right"></i> PDF Compressor</a></li>
-                        <li><a href="pdf-merger.html"><i class="fas fa-chevron-right"></i> PDF Merger</a></li>
-                        <li><a href="pdf-splitter.html"><i class="fas fa-chevron-right"></i> PDF Splitter</a></li>
-                        <li><a href="pdf-to-word.html"><i class="fas fa-chevron-right"></i> PDF to Word</a></li>
-                        <li><a href="pdf-to-jpg.html"><i class="fas fa-chevron-right"></i> PDF to JPG</a></li>
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#featured-tools"><i class="fas fa-chevron-right"></i> Tools</a></li>
+                        <li><a href="#categories"><i class="fas fa-chevron-right"></i> Categories</a></li>
+                        <li><a href="#how-it-works"><i class="fas fa-chevron-right"></i> How It Works</a></li>
+                        <li><a href="#footer"><i class="fas fa-chevron-right"></i> Contact</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-col">
-                    <h3 class="footer-title">Company</h3>
+                    <h3 class="footer-title">Legal</h3>
                     <ul class="footer-links">
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> About Us</a></li>
                         <li><a href="#"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
                         <li><a href="#"><i class="fas fa-chevron-right"></i> Terms of Service</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Blog</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Cookie Policy</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Disclaimer</a></li>
                     </ul>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2023 ToolMaster. All rights reserved. All tools are free to use and process files in your browser.</p>
+                <p>&copy; 2023 ToolMaster. All rights reserved. All tools are free to use and process files locally in your browser.</p>
+                <p style="margin-top: 10px; font-size: 0.8rem;">
+                    <i class="fas fa-lock" style="margin-right: 5px;"></i> Your files never leave your computer. All processing happens in your browser.
+                </p>
             </div>
         </div>
     </footer>
@@ -1308,29 +1173,34 @@
         document.querySelector('.footer-bottom p').innerHTML = 
             document.querySelector('.footer-bottom p').innerHTML.replace('2023', new Date().getFullYear());
         
-        // Add loading animation for images
-        const toolCards = document.querySelectorAll('.tool-card');
-        toolCards.forEach((card, index) => {
-            // Add staggered animation on load
-            card.style.opacity = '0';
-            card.style.transform = 'translateY(20px)';
+        // Add animation for hero stats
+        const statValues = document.querySelectorAll('.stat-value');
+        statValues.forEach(stat => {
+            stat.style.opacity = '0';
+            stat.style.transform = 'translateY(20px)';
             
             setTimeout(() => {
-                card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-                card.style.opacity = '1';
-                card.style.transform = 'translateY(0)';
-            }, 100 + (index * 100));
+                stat.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+                stat.style.opacity = '1';
+                stat.style.transform = 'translateY(0)';
+            }, 300);
         });
         
-        // Ad placeholder animation
-        const adContainer = document.querySelector('.ad-container');
-        if (adContainer) {
-            adContainer.style.opacity = '0';
-            setTimeout(() => {
-                adContainer.style.transition = 'opacity 0.8s ease';
-                adContainer.style.opacity = '1';
-            }, 800);
+        // Highlight the Image Compressor link
+        const compressorLink = document.querySelector('a[href="image-compressor.html"]');
+        if (compressorLink && !compressorLink.classList.contains('tool-card')) {
+            compressorLink.style.fontWeight = '600';
+            compressorLink.style.color = 'var(--primary-color)';
         }
+        
+        // Add click tracking for analytics (placeholder)
+        document.querySelectorAll('a[href="image-compressor.html"]').forEach(link => {
+            link.addEventListener('click', function() {
+                console.log('Navigating to Image Compressor Tool');
+                // In a real implementation, you would add analytics tracking here
+                // Example: gtag('event', 'click', {'event_category': 'Navigation', 'event_label': 'Image Compressor'});
+            });
+        });
     </script>
 </body>
 </html>
